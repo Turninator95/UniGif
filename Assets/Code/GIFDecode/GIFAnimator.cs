@@ -14,8 +14,6 @@ namespace Memories.GifDisplay
         [SerializeField]
         private AnimatedGIF animatedGIF;
         private int frameIndex;
-        [SerializeField]
-        private bool animate = false;
         private bool paused = false;
         void Awake()
         {
