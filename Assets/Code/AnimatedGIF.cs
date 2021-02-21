@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using UnityEngine;
 
 public class AnimatedGIF : ScriptableObject
@@ -48,12 +49,14 @@ public class AnimatedGIF : ScriptableObject
 
     public void LoadingCompleted(List<GifTexture> gifTextures)
     {
-        frames = gifTextures;
+        GifTexture[] textures = new GifTexture[gifTextures.Count];
+        gifTextures.CopyTo(textures);
+        frames = textures.ToList();
         if (frames.Count > 0)
         {
             width = frames[0].m_texture2d.width;
             height = frames[0].m_texture2d.height;
-            fps = Mathf.RoundToInt(60 / frames[0].m_delaySec);
+            fps = Mathf.RoundToInt(1 / frames[0].m_delaySec);
         }
         
     }

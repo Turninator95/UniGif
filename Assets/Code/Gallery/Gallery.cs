@@ -116,7 +116,7 @@ namespace Memories
         }
         private void GifLoaded(GIFImage loadedImage)
         {
-            loadedImage.gameObject.AddComponent<GIFAnimator>().AnimateGIF(loadedImage);
+            //loadedImage.gameObject.AddComponent<GIFAnimator>().AnimateGIF(loadedImage);
         }
     }
 }

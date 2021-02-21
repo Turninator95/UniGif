@@ -1,19 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Unity.EditorCoroutines.Editor;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace Memories.GifDisplay
 {
-    [RequireComponent(typeof(RawImage), typeof(AspectRatioFitter))]
+    [RequireComponent(typeof(RawImage), typeof(AspectRatioFitter)), ExecuteInEditMode]
     public class GIFAnimator : MonoBehaviour
     {
         private RawImage gifDisplay;
         private AspectRatioFitter aspectRatioFitter;
-        [SerializeField, HideInInspector]
-        private GIFImage gifImage;
+        [SerializeField]
+        private AnimatedGIF animatedGIF;
         private int frameIndex;
-        private bool paused;
+        [SerializeField]
+        private bool animate = false;
+        private bool paused = false;
         void Awake()
         {
             gifDisplay = GetComponent<RawImage>();
@@ -27,19 +30,26 @@ namespace Memories.GifDisplay
 
         void Start()
         {
-            if (gifImage != null)
-                AnimateGIF(gifImage);
+            if (animatedGIF != null)
+            {
+                AnimateGIF(animatedGIF);
+            }
         }
 
-        public void AnimateGIF(GIFImage gifImage)
+        public void AnimateGIF(AnimatedGIF animatedGIF)
         {
             frameIndex = 0;
-            this.gifImage = gifImage;
-            if (gifImage.Frames.Count > 0)
+            this.animatedGIF = animatedGIF;
+            if (animatedGIF.Frames.Count > 0)
             {
-                gifDisplay.texture = gifImage.Frames[frameIndex].m_texture2d;
+                gifDisplay.texture = animatedGIF.Frames[frameIndex].m_texture2d;
                 aspectRatioFitter.aspectRatio = (float)gifDisplay.texture.width / gifDisplay.texture.height;
+#if UNITY_EDITOR
+                EditorCoroutineUtility.StartCoroutine(StartAnimation(), this);
+#endif
+#if UNITY_STANDALONE
                 StartCoroutine(StartAnimation());
+#endif
             }
         }
 
@@ -47,12 +57,12 @@ namespace Memories.GifDisplay
         {
             while (!paused)
             {
-                yield return new WaitForSeconds(gifImage.Frames[frameIndex].m_delaySec);
-                if (frameIndex < gifImage.Frames.Count - 1)
+                yield return new WaitForSeconds(animatedGIF.Frames[frameIndex].m_delaySec);
+                if (frameIndex < animatedGIF.Frames.Count - 1)
                     frameIndex++;
                 else
                     frameIndex = 0;
-                gifDisplay.texture = gifImage.Frames[frameIndex].m_texture2d;
+                gifDisplay.texture = animatedGIF.Frames[frameIndex].m_texture2d;
             }
         }
 
