@@ -11,6 +11,8 @@ public class GifDecoderJob : ThreadedJob
     private static List<string> debugMessages = new List<string>();
     public static List<string> DebugMessages { get => debugMessages; }
 
+    public Action<List<GifTexture>> DecodingCompleted;
+
     public byte[] gifBytes;  // job data has to be set externally
     private List<DecodedFrame> decodedFrames = new List<DecodedFrame>();
     private List<ushort> disposalMethodList = new List<ushort>();
@@ -22,7 +24,7 @@ public class GifDecoderJob : ThreadedJob
     protected override void ThreadFunction()
     {
         var gifData = new GifData();
-        if (SetGifData(gifBytes, ref gifData, false) == false)
+        if (SetGifData(gifBytes, ref gifData, true) == false)
             debugMessages.Add($"{DateTime.Now} [ERROR]: GifData could not be set.");
 
         if (gifData.m_imageBlockList == null || gifData.m_imageBlockList.Count < 1)
@@ -89,6 +91,8 @@ public class GifDecoderJob : ThreadedJob
             }
             debugMessages.Clear();
         }
+
+        DecodingCompleted.Invoke(gifTexList);
     }
 
     /// <summary>

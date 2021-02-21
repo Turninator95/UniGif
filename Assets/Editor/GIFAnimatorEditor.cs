@@ -8,6 +8,7 @@ using Memories.GifDisplay;
 public class GIFAnimatorEditor : Editor
 {
     private Texture gifFile;
+    private AnimatedGIF animatedGIF;
     private bool updatedReference = false;
     public override void OnInspectorGUI()
     {
@@ -24,6 +25,23 @@ public class GIFAnimatorEditor : Editor
                 gifFile = newGifFile;
             else
                 Debug.LogError($"The provided file is not a GIF.");
+        }
+        if (gifFile != null)
+            if (GUILayout.Button("Create Animated GIF Asset"))
+            {
+                animatedGIF = CreateInstance<AnimatedGIF>();
+                animatedGIF.Load(AssetDatabase.GetAssetPath(gifFile));
+            }
+        if (animatedGIF != null)
+        {
+            if (animatedGIF.Frames.Count > 0)
+            {
+                AssetDatabase.CreateAsset(animatedGIF, "Assets/AnimatedGif.asset");
+                AssetDatabase.SaveAssets();
+                animatedGIF = null;
+            }
+            else
+                animatedGIF.GifDecoderJob.Update();
         }
     }
 }

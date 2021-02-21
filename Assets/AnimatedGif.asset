@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1782421a821c5914990a9ee73764521c, type: 3}
+  m_Name: AnimatedGif
+  m_EditorClassIdentifier: 
+  frames:
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  - m_texture2d: {fileID: 0}
+    m_delaySec: 0.03
+  width: 800
+  height: 800
+  fps: 1956
+  filePath: D:/Development/_UTILITIES/UNITY PACKAGE MANAGER/UniGif/Assets/Loading/Spinner-1.2s-800px.gif
