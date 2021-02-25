@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using UnityEditor;
 using UnityEngine;
 
 public class AnimatedGIF : ScriptableObject
@@ -57,6 +58,12 @@ public class AnimatedGIF : ScriptableObject
             width = frames[0].m_texture2d.width;
             height = frames[0].m_texture2d.height;
             fps = Mathf.RoundToInt(1 / frames[0].m_delaySec);
+
+            foreach (var frame in frames)
+            {
+                AssetDatabase.CreateAsset(frame.m_texture2d, $"Assets/Texture_{frames.IndexOf(frame)}.asset");
+            }
+            AssetDatabase.SaveAssets();
         }
         
     }

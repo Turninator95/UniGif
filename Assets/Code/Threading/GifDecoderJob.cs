@@ -129,7 +129,7 @@ public class GifDecoderJob : ThreadedJob
 
         if (debugLog)
         {
-            gifData.Dump();
+            gifData.Dump(debugMessages);
             debugMessages.Add($"{DateTime.Now} [DEBUG]: Completed setting GifData.");
         }
         return true;

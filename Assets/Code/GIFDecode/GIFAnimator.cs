@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 namespace Memories.GifDisplay
 {
-    [RequireComponent(typeof(RawImage), typeof(AspectRatioFitter)), ExecuteInEditMode]
+    [RequireComponent(typeof(RawImage), typeof(AspectRatioFitter))]
     public class GIFAnimator : MonoBehaviour
     {
         private RawImage gifDisplay;
@@ -42,12 +42,7 @@ namespace Memories.GifDisplay
             {
                 gifDisplay.texture = animatedGIF.Frames[frameIndex].m_texture2d;
                 aspectRatioFitter.aspectRatio = (float)gifDisplay.texture.width / gifDisplay.texture.height;
-#if UNITY_EDITOR
-                EditorCoroutineUtility.StartCoroutine(StartAnimation(), this);
-#endif
-#if UNITY_STANDALONE
                 StartCoroutine(StartAnimation());
-#endif
             }
         }
 

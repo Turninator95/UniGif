@@ -13,77 +13,77 @@ MonoBehaviour:
   m_Name: AnimatedGif
   m_EditorClassIdentifier: 
   frames:
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: 9173102024da72443a477b7b27c48af6, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: b09e8c6c5bcda4645bdbd4c90e1c7fe1, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: 4ff9c2393e9d590479e42d4a69669bf8, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: af039d5853ef9b24c812adb655970dc8, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: e4bb7c177674a9c4b99e166e1c437444, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: 336f5d3c0db1a0a4990f1ba152e0dc29, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: c44ceafa6d1b57a41b08a117f0658269, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: 297b62440c821d14e9b04168ddc41c48, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: 05fdb6dace80b8e4b9318960fb8ab13a, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: 6d602b928ae81dc4da5af012fc64f554, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: 6602785541c2b2d40946667534cbf14b, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: a4df917179e15da45a5b5f8dd2116ec0, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: 412237cba80b8414fb337585c95e3ed3, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: 3e1a0bc6c14344a4d90f2712bafef7dc, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: 259e0f64c6075c9448904884769bf4c8, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: 0713398e082cfa441828dc3d34aa9d01, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: ee024c7fd69d9f34b841566eed779a2d, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: 953ddc00657b2744da230a7fa43d19e0, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: 969c7fb52dd14b246a5bb6f957842dba, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: 144883723763b434d8a2de83d95f3a58, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: cf93552e42bdd554d81f9ed7bbbed198, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: 4eeaba1e16e00454686905e8b0b32343, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: f7f5605606271a442a7fc2b9c2ef7c25, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: 6ba3877ebe248744c8941282e6296876, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: e931a196b25ca0748b25bef6ae02a7f9, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: e7271d3dcf72c6d45ba7beaa90cdad07, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: fbc535be5b5634c419f239a5201a6db2, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: 90601e6f73868bd43a9037355ae371f4, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: 7a3befa9521ac224e959a763106954fc, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: 9b53e4f132d1e3e49a869b8d5b532916, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: 17fe3f8f6ef500744a9aae844982f08d, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: cfc620e24227f394c94174af2a665355, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: ee63bf3465b2e4048a21a193b7504fc9, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: fe1ffde5238c46c4e97baf35702be127, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: e7808456fa7e8d44fa62ba3e5ef18f0f, type: 2}
     m_delaySec: 0.03
-  - m_texture2d: {fileID: 0}
+  - m_texture2d: {fileID: 2800000, guid: f64be1fc0233022489970f248c7f3746, type: 2}
     m_delaySec: 0.03
   width: 800
   height: 800
